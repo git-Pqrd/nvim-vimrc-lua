@@ -1,15 +1,11 @@
-require("theprimeagen.set")
-require("theprimeagen.remap")
+require("config.set")
+require("config.remap")
 
 local augroup = vim.api.nvim_create_augroup
-local ThePrimeagenGroup = augroup('ThePrimeagen', {})
+local configGroup = augroup('config', {})
 
 local autocmd = vim.api.nvim_create_autocmd
 local yank_group = augroup('HighlightYank', {})
-
-function R(name)
-    require("plenary.reload").reload_module(name)
-end
 
 autocmd('TextYankPost', {
     group = yank_group,
@@ -23,7 +19,7 @@ autocmd('TextYankPost', {
 })
 
 autocmd({"BufWritePre"}, {
-    group = ThePrimeagenGroup,
+    group = configGroup,
     pattern = "*",
     command = [[%s/\s\+$//e]],
 })
