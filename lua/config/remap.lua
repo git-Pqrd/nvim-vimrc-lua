@@ -21,7 +21,6 @@ vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
-vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/.config/nvim/lua/theprimeagen/packer.lua<CR>");
 vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
@@ -34,3 +33,8 @@ vim.keymap.set("n", "tn", "<cmd>tabn<CR>")
 vim.keymap.set("n", "ts", "<cmd>vsplit")
 -- format the buffer and go back to normal mode
 vim.keymap.set("n", "<leader>p", "mzggvG=<Esc>`z")
+
+-- Map Ctrl-/ to toggle comments in normal and visual mode
+vim.api.nvim_set_keymap('n', '<C-_>', ':CommentToggle<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<C-_>', ":'<,'>CommentToggle<CR>", { noremap = true, silent = true })
+

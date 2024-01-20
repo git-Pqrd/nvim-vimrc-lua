@@ -119,10 +119,20 @@ _G.packer_plugins = {
     path = "/home/piquard/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
+  ["emmet-vim"] = {
+    loaded = true,
+    path = "/home/piquard/.local/share/nvim/site/pack/packer/start/emmet-vim",
+    url = "https://github.com/mattn/emmet-vim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/piquard/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
+  },
+  ["fzf-lua"] = {
+    loaded = true,
+    path = "/home/piquard/.local/share/nvim/site/pack/packer/start/fzf-lua",
+    url = "https://github.com/ibhagwan/fzf-lua"
   },
   gruvbox = {
     loaded = true,
@@ -154,6 +164,11 @@ _G.packer_plugins = {
     path = "/home/piquard/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-comment"] = {
+    loaded = true,
+    path = "/home/piquard/.local/share/nvim/site/pack/packer/start/nvim-comment",
+    url = "https://github.com/terrortylor/nvim-comment"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/piquard/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -169,6 +184,11 @@ _G.packer_plugins = {
     path = "/home/piquard/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context",
     url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
   },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/home/piquard/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/piquard/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -179,20 +199,10 @@ _G.packer_plugins = {
     path = "/home/piquard/.local/share/nvim/site/pack/packer/start/playground",
     url = "https://github.com/nvim-treesitter/playground"
   },
-  ["plenary.nvim"] = {
-    loaded = true,
-    path = "/home/piquard/.local/share/nvim/site/pack/packer/start/plenary.nvim",
-    url = "https://github.com/nvim-lua/plenary.nvim"
-  },
   ["refactoring.nvim"] = {
     loaded = true,
     path = "/home/piquard/.local/share/nvim/site/pack/packer/start/refactoring.nvim",
     url = "https://github.com/theprimeagen/refactoring.nvim"
-  },
-  ["telescope.nvim"] = {
-    loaded = true,
-    path = "/home/piquard/.local/share/nvim/site/pack/packer/start/telescope.nvim",
-    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["trouble.nvim"] = {
     config = { "\27LJ\2\nC\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\nicons\1\nsetup\ftrouble\frequire\0" },
@@ -219,6 +229,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/piquard/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/home/piquard/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   },
   ["zen-mode.nvim"] = {
     loaded = true,
